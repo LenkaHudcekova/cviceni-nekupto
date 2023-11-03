@@ -15,3 +15,15 @@ const product3 = {
   name: 'Anatoplavky',
   description: 'Aby muži na rozpálených plážích kromě vašeho těla obdivovali také vaše nitro.',
 };
+
+const firstProduct = document.querySelector("#product1")
+firstProduct.classList.add ("border-primary")
+
+const parentBtn = document.querySelector ("#product2")
+const btn = parentBtn.querySelector (".btn")
+btn.classList.remove ("btn-primary")
+
+const parentTitle = document.querySelector ("#product3")
+const childTitle = parentTitle.querySelector (".card-body")
+const cardTitle = childTitle.querySelector (".card-title")
+cardTitle.classList.toggle ("text-center")
